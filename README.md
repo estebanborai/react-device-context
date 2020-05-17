@@ -19,7 +19,7 @@ npm install react-device-context
 
 ## Usage
 
-First, you must wrap your application root component with the `DeviceContextProvider`:
+First, you must wrap your application root component with the `DeviceContextProvider`
 
 ```tsx
 import React from 'react';
@@ -37,6 +37,85 @@ ReactDOM.render(
   document.getElementById('app')
 );
 ```
+
+When your application is wrapped with the `DeviceContextProvider`, you will be able to consume the API.
+
+## API
+
+- Types
+  - [`type Browser`](https://github.com/estebanborai/react-device-context#type-browser)
+  - [`type DeviceFormat`](https://github.com/estebanborai/react-device-context#deviceformat)
+- Hooks
+  - [`useCurrentBrowser`](https://github.com/estebanborai/react-device-context#usecurrentbrowser--browser--null)
+  - [`useCurrentFormat`](https://github.com/estebanborai/react-device-context#usecurrentformat--deviceformat--null)
+  - [`useDeviceContext`](https://github.com/estebanborai/react-device-context#usedevicecontext--contextidevicecontext)
+  - [`useIsMobile`](https://github.com/estebanborai/react-device-context#useismobile--boolean)
+- Providers
+  - [`DeviceContextProvider`](https://github.com/estebanborai/react-device-context#devicecontextprovider)
+
+### `type Browser`
+The browser type enumerates the browsers supported by this module.
+Currently the module supports the following browsers:
+
+Browser | Value
+------------ | -------------
+Chrome | `'Chrome'`
+Edge | `'Edge'`
+Edge Multiplatform | `'EdgeChromium'`
+Firefox | `'Firefox'`
+Internet Explorer | `'IE'`
+Opera | `'Opera'`
+Safari | `'Safari'`
+
+Supported browsers with its corresponding value from the `Browser` type.
+
+```tsx
+import React from 'react';
+import { useCurrentBrowser } from 'react-device-context';
+
+function App(): JSX.Element {
+  const currentBrowser = useCurrentBrowser();
+
+  if (currentBrowser === 'Firefox') {
+    return <p>You are on firefox</p>;
+  } else {
+    return <p>{ currentBrowser }</p>;
+  }
+}
+```
+
+### DeviceFormat
+`DeviceFormat` refers to the device type. Current supported devices are `Desktop` and `Mobile`.
+
+### Hooks
+
+### `useCurrentBrowser() => Browser | null`
+`useCurrentBrowser` hook returns the current browser as a `Browser` type value if the browser is
+supported. Otherwise returns `null`.
+
+### `useCurrentFormat() => DeviceFormat | null`
+`useCurrentFormat` hook returns the current device format as a `Format` type value.
+
+### `useDeviceContext() => Context<IDeviceContext>`
+`useDeviceContext` exposes the DeviceContext interface.
+The `DeviceContext` interface has only one member which is the `deviceProfile`, which is used by `useCurrentBrowser` and `useCurrentFormat`
+under the hood.
+
+`deviceProfile` implements the `DeviceProfile` interface which has the following members:
+
+Property | Type
+------------ | -------------
+format | `DeviceFormat | null`
+browser | `Browser | null`
+
+### `useIsMobile() => boolean`
+A hook that returns `true` if the current instance is running in a mobile device, otherwise returns `false`.
+
+### Providers
+
+### `<DeviceContextProvider>`
+The `DeviceContextProvider` is the provider for the main context of this module, its recommended to wrap your application with this provider
+in order to consume the API.
 
 ## Contributions
 Any contribution is welcome, feel free to open an issue or a pull request.
