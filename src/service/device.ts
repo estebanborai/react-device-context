@@ -1,8 +1,6 @@
 import { MOBILE_REGEXP } from '../constants';
 
-export type DeviceFormat = 'Desktop'
-  | 'Tablet'
-  | 'Mobile';
+export type DeviceFormat = 'Desktop' | 'Mobile';
 
 export type Browser = 'Chrome'
   | 'Edge'

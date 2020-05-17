@@ -1,11 +1,11 @@
 {
   "name": "react-device-context",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "ReactJS Context to detect current device details",
   "main": "lib/index.js",
   "scripts": {
     "build": "rollup -c",
-    "test": "test"
+    "prepublish": "rm -rf ./lib && npm run build"
   },
   "repository": {
     "type": "git",
