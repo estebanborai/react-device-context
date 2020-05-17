@@ -43,15 +43,15 @@ When your application is wrapped with the `DeviceContextProvider`, you will be a
 ## API
 
 - Types
-  - [`type Browser`]()
-  - [`type DeviceFormat`]()
+  - [`type Browser`](https://github.com/estebanborai/react-device-context#type-browser)
+  - [`type DeviceFormat`](https://github.com/estebanborai/react-device-context#deviceformat)
 - Hooks
-  - [`useCurrentBrowser`]()
-  - [`useCurrentFormat`]()
-  - [`useDeviceContext`]()
-  - [`useIsMobile`]()
+  - [`useCurrentBrowser`](https://github.com/estebanborai/react-device-context#usecurrentbrowser--browser--null)
+  - [`useCurrentFormat`](https://github.com/estebanborai/react-device-context#usecurrentformat--deviceformat--null)
+  - [`useDeviceContext`](https://github.com/estebanborai/react-device-context#usedevicecontext--contextidevicecontext)
+  - [`useIsMobile`](https://github.com/estebanborai/react-device-context#useismobile--boolean)
 - Providers
-  - [`DeviceContextProvider`]()
+  - [`DeviceContextProvider`](https://github.com/estebanborai/react-device-context#devicecontextprovider)
 
 ### `type Browser`
 The browser type enumerates the browsers supported by this module.
