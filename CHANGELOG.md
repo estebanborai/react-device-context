@@ -18,3 +18,11 @@ All notable changes to this project will be documented in this file.
     - `Desktop`
     - `Mobile`
   - Implement `DeviceContextProvider`
+
+## [0.2.0] - 2020-05-17
+### Added
+  - Implement `useCurrentBrowser`, `useCurrentFormat` and `useIsMobile` hooks.
+### Removed
+  - Remove format `Tablet`.
+### Fix
+  - Remove `.eslintrc` from tarball.
