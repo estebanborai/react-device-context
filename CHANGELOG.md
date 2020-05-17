@@ -26,3 +26,7 @@ All notable changes to this project will be documented in this file.
   - Remove format `Tablet`.
 ### Fix
   - Remove `.eslintrc` from tarball.
+
+## [0.2.1] - 2020-05-17
+### Fix
+  - Add missing documentation.
