@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "outDir": "lib",
+    "allowJs": false,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "module": "ES2015",
+    "target": "ES2018",
+    "lib": ["ES5", "ES6", "ES7", "ES2018", "DOM"],
+    "jsx": "react",
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "paths": {
+      "context/*": [
+        "src/context/*"
+      ],
+      "hooks/*": [
+        "src/hooks/*"
+      ],
+      "service/*": [
+        "src/service/*"
+      ],
+      "utils/*": [
+        "src/utils/*"
+      ],
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib"
+  ]
+}

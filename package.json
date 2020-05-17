@@ -1,0 +1,46 @@
+{
+  "name": "react-device-context",
+  "version": "0.1.0",
+  "description": "ReactJS Context to detect current device details",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estebanborai/react-device-context.git"
+  },
+  "keywords": [
+    "react",
+    "device",
+    "user-agent",
+    "context",
+    "hooks"
+  ],
+  "author": "Esteban Borai <estebanborai@gmail.com> (https://github.com/estebanborai)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/estebanborai/react-device-context/issues"
+  },
+  "homepage": "https://github.com/estebanborai/react-device-context#readme",
+  "devDependencies": {
+    "@types/react": "^16.9.35",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.2",
+    "react": "^16.13.1",
+    "rollup": "^2.10.2",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "typescript": "^3.9.2"
+  },
+  "peerDependencies": {
+    "react": "16 >="
+  },
+  "dependencies": {}
+}
