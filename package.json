@@ -1,8 +1,11 @@
 {
-  "name": "react-device-context",
+  "name": "@estebanborai/react-device-context",
   "version": "0.2.1",
   "description": "ReactJS Context to detect current device details",
   "main": "lib/index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "build": "rollup -c",
     "prepublish": "rm -rf ./lib && npm run build"
